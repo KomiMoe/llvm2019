@@ -1,10 +1,10 @@
-﻿<?xml version="1.0" ?>
+<?xml version="1.0" ?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="llvm2019.36c7e004-3301-41f5-a2bf-06d018b89040" Version="1.0" Language="en-US" Publisher="Marek Aniola" />
+        <Identity Id="llvm2019.36c7e004-3301-41f5-a2bf-06d018b89040" Version="1.2019" Language="en-US" Publisher="KomiMoe" />
         <DisplayName>llvm2019</DisplayName>
         <Description xml:space="preserve">Allows the LLVM Compiler Toolchain (installed separately) to be used from within Visual Studio 2019 (only) to build C/C++ Projects.</Description>
-        <MoreInfo>https://github.com/mangh/llvm2019</MoreInfo>
+        <MoreInfo>https://github.com/KomiMoe/llvm2019</MoreInfo>
         <License>license.txt</License>
         <Icon>llvm2019.png</Icon>
     </Metadata>
