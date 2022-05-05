@@ -5,3 +5,4 @@ Key.snk
 packages/
 *.csproj.user
 TODO/
+/_ReSharper.Caches

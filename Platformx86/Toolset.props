@@ -2,10 +2,10 @@
   <Import Project="$(VCTargetsPath)\LLVM.Cpp.Common.props"/>
 
   <PropertyGroup>
-    <ExecutablePath Condition="'$(ExecutablePath)' == ''">$(VC_ExecutablePath_x86);$(WindowsSDK_ExecutablePath);$(VS_ExecutablePath);$(MSBuild_ExecutablePath);$(SystemRoot)\SysWow64;$(FxCopDir);$(PATH);</ExecutablePath>
+    <ExecutablePath Condition="'$(ExecutablePath)' == ''">$(VC_ExecutablePath_x86);$(WindowsSDK_ExecutablePath);$(VS_ExecutablePath);$(MSBuild_ExecutablePath);$(SystemRoot)\SysWow64;$(PATH);</ExecutablePath>
     <ReferencePath Condition="'$(ReferencePath)' == ''">$(VC_ReferencesPath_x86);</ReferencePath>
     <LibraryPath Condition="'$(LibraryPath)' == ''">$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(NETFXKitsDir)Lib\um\x86</LibraryPath>
     <ExcludePath Condition="'$(ExcludePath)' == ''">$(VC_IncludePath);$(WindowsSDK_IncludePath);$(MSBuild_ExecutablePath);$(VC_LibraryPath_x86);</ExcludePath>
-    <DebugCppRuntimeFilesPath Condition="'$(DebugCppRuntimeFilesPath)' == ''">$(VCToolsInstallDir)redist\Debug_NonRedist\x86</DebugCppRuntimeFilesPath>
+    <DebugCppRuntimeFilesPath Condition="'$(DebugCppRuntimeFilesPath)' == ''">$(VCToolsInstallDir)Debug_NonRedist\x86;$(WindowsSdkDir)bin\$(TargetPlatformVersion)\x86\ucrt</DebugCppRuntimeFilesPath>
   </PropertyGroup>
 </Project>
