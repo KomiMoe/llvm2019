@@ -20,6 +20,11 @@
         </PropertyPageSchema>
     </ItemGroup>
 
+    <PropertyGroup>
+        <IncludePath Condition="'$(ClangIncludePath)' != ''">$(ClangIncludePath);$(IncludePath)</IncludePath>
+        <ExcludePath Condition="'$(ClangIncludePath)' != ''">$(ClangIncludePath);$(ExcludePath)</ExcludePath>
+    </PropertyGroup>
+
     <!-- Take any clang-specific options that the user wants to pass and stick them onto the
        general purpose list of command line flags. -->
     <ItemDefinitionGroup Condition="$(UseClangCl)">

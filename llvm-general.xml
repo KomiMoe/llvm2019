@@ -26,6 +26,14 @@
                     Default="$(LLVMInstallDir)bin\clang-cl.exe"
                     Subtype="file">
     </StringProperty>
+    
+    <StringProperty Name="ClangIncludePath"
+                    DisplayName="clang include folder"
+                    Description="Specify the path to clang include folder."
+                    Category="General"
+                    Default="$(LLVMInstallDir)lib\clang\19\include"
+                    Subtype="folder">
+    </StringProperty>
 
     <StringProperty Name="ClangClAdditionalOptions"
                     DisplayName="Additional Compiler Options"
