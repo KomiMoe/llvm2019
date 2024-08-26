@@ -17,6 +17,9 @@
        -->
 
     <PropertyGroup>
+        <!-- Let VisualStudio known we r using clang -->
+        <TargetPlatformIdentifier>Clang.Windows</TargetPlatformIdentifier>
+        <ToolsetISenseIdentifier>$(TargetPlatformIdentifier)</ToolsetISenseIdentifier>
         <!-- This initializes the values in Properties > General > Output Directory.
        Builds will fail without this. -->
         <OutDirWasSpecified Condition=" '$(OutDir)'!='' AND '$(OutDirWasSpecified)'=='' ">true</OutDirWasSpecified>
