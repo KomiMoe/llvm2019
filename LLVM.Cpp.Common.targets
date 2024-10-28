@@ -29,6 +29,8 @@
        general purpose list of command line flags. -->
     <ItemDefinitionGroup Condition="$(UseClangCl)">
         <ClCompile>
+            <ClangClMode>true</ClangClMode>
+            <ConformanceMode>Default</ConformanceMode>
             <AdditionalOptions>-m$(PlatformArchitecture) $(ClangClAdditionalOptions) %(AdditionalOptions)</AdditionalOptions>
         </ClCompile>
     </ItemDefinitionGroup>
